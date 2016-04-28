@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <include android:id="@+id/tab1" layout="@layout/merge_footer_tab" />
+    <include android:id="@+id/tab2" layout="@layout/merge_footer_tab" />
+    <include android:id="@+id/tab3" layout="@layout/merge_footer_tab" />
+    <include android:id="@+id/tab4" layout="@layout/merge_footer_tab" />
+    
+    <!--fragment
+        android:id="@+id/tab1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_plans_1"></fragment>
+    <fragment
+        android:id="@+id/tab2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_data_1"></fragment>
+    <fragment
+        android:id="@+id/tab3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_contact_1"></fragment>
+    <fragment
+        android:id="@+id/tab4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/btn_set_1"></fragment-->
+
+
+</LinearLayout>
