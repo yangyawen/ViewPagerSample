@@ -6,22 +6,7 @@
     tools:context=".MainActivity">
 
     <!-- ToolBar -->
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorPrimary"
-        android:elevation="4dp"
-        android:title="">
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="我是什么"
-            android:textSize="20sp"/>
-    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/merge_toolbar" />
 
     <!-- Pages -->
     <android.support.v4.view.ViewPager

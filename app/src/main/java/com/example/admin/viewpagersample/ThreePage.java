@@ -13,10 +13,10 @@ public class ThreePage extends Page {
 
     private static final String LOG_TAG = "ThreePage";
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        title = "Three";
+    public static ThreePage newInstance(String title) {
+        ThreePage fragment = new ThreePage();
+        fragment.setTittle(title);
+        return fragment;
     }
 
     @Override

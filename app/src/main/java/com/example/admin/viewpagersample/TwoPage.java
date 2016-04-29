@@ -13,12 +13,11 @@ public class TwoPage extends Page {
 
     private static final String LOG_TAG = "TwoPage";
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        title = "Two";
+    public static TwoPage newInstance(String title) {
+        TwoPage fragment = new TwoPage();
+        fragment.setTittle(title);
+        return fragment;
     }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         Log.e(LOG_TAG, "onCreateView");

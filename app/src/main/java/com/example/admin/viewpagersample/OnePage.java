@@ -16,21 +16,14 @@ public class OnePage extends Page {
 
     public static OnePage newInstance(String title) {
         //通过Bundle保存数据
+        /*
         Bundle args = new Bundle();
-        args.putString("title", title);
+        args.putString("title", title);*/
         OnePage fragment = new OnePage();
         fragment.setTittle(title);
         //将Bundle设置为fragment的参数
         //fragment.setArguments(args);
         return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Log.e(LOG_TAG, "onCreate");
-        setRetainInstance(true);
-
     }
 
     @Override

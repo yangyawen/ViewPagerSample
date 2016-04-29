@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -35,9 +34,9 @@ public class MainActivity
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        // Toolbar
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
-        //toolbar.setTitle("uuu");
+
         toolbar.setNavigationIcon(R.drawable.btn_back);
 
         initPageList();
@@ -48,13 +47,13 @@ public class MainActivity
     private void initPageList() {
         pageList = new ArrayList<>();
 
-        OnePage onePage = OnePage.newInstance("One");
+        OnePage onePage = OnePage.newInstance("PageOne");
         pageList.add(onePage);
-        TwoPage twoPage = new TwoPage();
+        TwoPage twoPage = TwoPage.newInstance("PageTwo");;
         pageList.add(twoPage);
-        ThreePage threePage = new ThreePage();
+        ThreePage threePage = ThreePage.newInstance("PageThree");;
         pageList.add(threePage);
-        FourPage fourPage = new FourPage();
+        FourPage fourPage = FourPage.newInstance("PageFour");
         pageList.add(fourPage);
 
     }

@@ -7,17 +7,5 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name="toolbarStyle">@style/ToolbarStyle</item>
-        <item name="toolbarNavigationButtonStyle">@style/ToolbarNavigationButtonStyle</item>
-        
-    </style>
-
-    <style name="ToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
-        <item name="android:width">15dp</item>
-        <item name="android:layout_height">25dp</item>
-        <item name="android:scaleType">centerInside</item>
-    </style>
-
-    <style name="ToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
     </style>
 </resources>

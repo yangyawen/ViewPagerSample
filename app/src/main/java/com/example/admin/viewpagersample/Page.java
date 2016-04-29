@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 public abstract class Page extends Fragment {
 
     private static final String LOG_TAG = "Page";
+
     protected String title;
 
     protected void setTittle(String title) {
